@@ -11,7 +11,7 @@
     width: 80px;
   }
   .container {
-    background-color: rgb(244, 244, 16);
+    background-color:aqua;
     font-family: cursive;
     height: 100vh;
     width: 100wh;
@@ -32,6 +32,9 @@
     border-radius: 8px;
     margin: 10px;
     cursor: pointer;
+  }
+  .timer{
+    color: white;
   }
   button:hover {
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
