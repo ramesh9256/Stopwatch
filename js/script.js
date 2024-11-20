@@ -40,10 +40,16 @@ startBtn.addEventListener("click", () => {
         hour.textContent = hours.toString().padStart(2,"0");
       
     }, 10); 
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
+    resetBtn.disabled = false;
 });
 
 stopBtn.addEventListener("click" , () => {
     clearInterval(miniTimer)
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
+    resetBtn.disabled = false;
 })
 
 
@@ -52,7 +58,11 @@ resetBtn.addEventListener("click" , () =>{
     hour.textContent = "00";
     second.textContent = "00";
     minute.textContent = "00";
-    mini.textContent = "00"
+    mini.textContent = "00";
+
+    startBtn.disabled = false;
+    stopBtn.disabled = false;
+    resetBtn.disabled = true;
 })
 
 
